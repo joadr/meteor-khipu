@@ -1,0 +1,1 @@
+Meteor.call('update_payment_notification_url');

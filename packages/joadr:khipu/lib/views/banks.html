@@ -1,0 +1,9 @@
+<template name="banks">
+	<input type="text" placeholder="Introduzca su email" />
+	<select name="banks" class="banks">
+	{{# each banks}}
+		<option value="{{id}}">{{name}}</option>
+	{{/each}}
+	</select>
+	<button id="sendBank">Pagar</button>
+</template>

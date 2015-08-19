@@ -1,0 +1,13 @@
+<template name="payments">
+	Pagos
+	<table border="1">
+		<tr><td>ID</td><td>Khipu_ID</td><td>Bill_id</td><td>Receptor</td><td>Monto</td><td>Pagado</td></tr>
+		{{# each pagos}}
+			{{> pagoItem}}
+		{{/each}}
+	</table>
+</template>
+
+<template name="pagoItem">
+	<tr><td>{{_id}}</td><td>{{khipu_id}}</td><td>{{bill_id}}</td><td>{{receiver_id}}</td><td>{{amount}}</td><td>{{payed}}</td></tr>
+</template>
